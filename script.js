@@ -73,7 +73,7 @@ function loadMars(){
     document.getElementById("radius").innerText = "Radius: " + radius[4];
     document.getElementById("core").innerText = "Core: " + core[4];
 
-    newTexture = new THREE.TextureLoader().load("2k_mars.jpg");
+    newTexture = new THREE.TextureLoader().load(".resources/2k_mars.jpg");
     planetMaterial.map = newTexture;
     document.getElementById("planetL").innerHTML = "Mars";
     scene.remove(ring);
@@ -191,8 +191,8 @@ function init() {
     
     //controls
     controls = new THREE.OrbitControls( camera, renderer.domElement );
-    controls.minPolarAngle = Math.PI/2;
-    controls.maxPolarAngle = Math.PI/2;
+    //controls.minPolarAngle = Math.PI/2;
+    //controls.maxPolarAngle = Math.PI/2;
     controls.enableZoom = true;
     controls.enablePan = false;
 }
