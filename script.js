@@ -5,9 +5,9 @@ var planets = [];
 var rings =[];
 
 var temperatures = [" 5778 K", "167 C", " 464 C", "15 C", " -65 C", " -110 C", " -140 C", " -195 C", " -200 C", " -225 C"];
-var distances = [" 152 100 000 000 km", " 91 691 000 km", " 41 400 000 km", " 78 340 000 km", " 628 730 000 km", " 1 275 000 000 km", " 2 723 950 000 km", " 4 351 400 000 km" , " 5 021 500 000 km"];
+var distances = [" 152 100 000 km", " 183 130 000 km", " 214 480 000 km", " 152 100 000 km", " 190 800 000 km", " 709 960 000 km", " 1 356 300 000 km", " 3 027 400 000" , " 4 422 700 000 km", " 2 021 100 000 km"];
 var radius = [" 6 371 km", "24 397 km", " 60 518 km", " 6 371 km", " 33 895 km", " 69 911 km", " 58 232 km", " 25 362 km", " 24 622 km", " 1 188.3 km" ];
-var core = [" hydrogen and helium", " iron", " iron and nickel", " iron and nickel alloys", " iron, nickel and sulphur", " dense hydrogen and helium", " iron and nickel", " water, methane and ammonia ice", " iron, nickel and silicates" , " nitrogen" ];
+var core = [" Hydrogen and Helium", " Iron", " Iron and Nickel", " Iron and Nickel alloys", " Iron, Nickel and Sulphur", " Dense Hydrogen and Helium", " Iron and Nickel", " Water, Methane and Ammonia ice", " Iron, Nickel and Silicates" , " Nitrogen" ];
 
 //on load init
 init();
@@ -15,7 +15,7 @@ animate();
 
 function loadSun(){
     
-    document.getElementById("temp").innerText = "Core temperature: " + temperatures[0];
+    document.getElementById("temp").innerText = "Core Temperature: " + temperatures[0];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[0];
     document.getElementById("radius").innerText = "Radius: " + radius[0];
     document.getElementById("core").innerText = "Core: " + core[0];
@@ -28,7 +28,7 @@ function loadSun(){
 
 function loadMercury(){
 
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[1];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[1];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[1];
     document.getElementById("radius").innerText = "Radius: " + radius[1];
     document.getElementById("core").innerText = "Core: " + core[1];
@@ -42,7 +42,7 @@ function loadMercury(){
 
 function loadVenus(){
     
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[2];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[2];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[2];
     document.getElementById("radius").innerText = "Radius: " + radius[2];
     document.getElementById("core").innerText = "Core: " + core[2];
@@ -55,7 +55,7 @@ function loadVenus(){
 
 function loadEarth(){
     
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[3];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[3];
     document.getElementById("dist").innerText = "Distance from Sun: " + distances[3];
     document.getElementById("radius").innerText = "Radius: " + radius[3];
     document.getElementById("core").innerText = "Core: " + core[3];
@@ -68,7 +68,7 @@ function loadEarth(){
 
 function loadMars(){
     
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[4];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[4];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[4];
     document.getElementById("radius").innerText = "Radius: " + radius[4];
     document.getElementById("core").innerText = "Core: " + core[4];
@@ -81,7 +81,7 @@ function loadMars(){
 
 function loadJupiter(){
     
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[5];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[5];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[5];
     document.getElementById("radius").innerText = "Radius: " + radius[5];
     document.getElementById("core").innerText = "Core: " + core[5];
@@ -94,7 +94,7 @@ function loadJupiter(){
 
 function loadSaturn(){
     
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[6];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[6];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[6];
     document.getElementById("radius").innerText = "Radius: " + radius[6];
     document.getElementById("core").innerText = "Core: " + core[6];
@@ -117,7 +117,7 @@ function loadSaturn(){
 
 function loadUranus(){
     
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[7];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[7];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[7];
     document.getElementById("radius").innerText = "Radius: " + radius[7];
     document.getElementById("core").innerText = "Core: " + core[7];
@@ -141,7 +141,7 @@ function loadUranus(){
 
 function loadNeptune(){
     
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[8];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[8];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[8];
     document.getElementById("radius").innerText = "Radius: " + radius[8];
     document.getElementById("core").innerText = "Core: " + core[8];
@@ -154,7 +154,7 @@ function loadNeptune(){
 
 function loadPluto(){
     
-    document.getElementById("temp").innerText = "Average temperature: " + temperatures[9];
+    document.getElementById("temp").innerText = "Average Temperature: " + temperatures[9];
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[9];
     document.getElementById("radius").innerText = "Radius: " + radius[9];
     document.getElementById("core").innerText = "Core: " + core[9];
