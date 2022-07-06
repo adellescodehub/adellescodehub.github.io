@@ -98,7 +98,8 @@ function loadSaturn(){
     document.getElementById("dist").innerText = "Distance from Earth: " + distances[6];
     document.getElementById("radius").innerText = "Radius: " + radius[6];
     document.getElementById("core").innerText = "Core: " + core[6];
-
+    
+    scene.remove(ring);
     newTexture = new THREE.TextureLoader().load("./resources/2k_saturn.jpg");
     planetMaterial.map = newTexture;
     var ringGeo = new THREE.RingGeometry(3,6,600);
