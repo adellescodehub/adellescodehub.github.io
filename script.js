@@ -73,7 +73,7 @@ function loadMars(){
     document.getElementById("radius").innerText = "Radius: " + radius[4];
     document.getElementById("core").innerText = "Core: " + core[4];
 
-    newTexture = new THREE.TextureLoader().load(".resources/2k_mars.jpg");
+    newTexture = new THREE.TextureLoader().load("./resources/2k_mars.jpg");
     planetMaterial.map = newTexture;
     document.getElementById("planetL").innerHTML = "Mars";
     scene.remove(ring);
