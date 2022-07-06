@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Solar System</title>
+</head>
+<body>
+     
+    <script src="https://unpkg.com/three@0.87.1/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/src/lights/PointLight.js" type="module"></script>
+
+	<div id="navBar">
+
+        <h1 id="planetL">Sun</h1>
+        <script src="script.js"></script>
+        <button class="itemB" id="sunB" onclick="loadSun()">S</button>
+        <button class="itemB" id="mercuryB" onclick="loadMercury()">M</button>
+        <button class="itemB" id="venusB" onclick="loadVenus()">V</button>
+        <button class="itemB" id="earthB" onclick="loadEarth()">E</button>
+        <button class="itemB" id="marsB" onclick="loadMars()">M</button>
+        <button class="itemB" id="jupiterB" onclick="loadJupiter()">J</button>
+        <button class="itemB" id="saturnB" onclick="loadSaturn()">S</button>
+        <button class="itemB" id="uranusB" onclick="loadUranus()">U</button>
+        <button class="itemB" id="neptuneB" onclick="loadNeptune()">N</button>
+        <button class="itemB" id="plutoB" onclick="loadPluto()">P</button>
+       
+    </div>
+    
+    <div id="info">
+        <p id="temp">Core Temperature:  5778 K</p>
+        <p id="dist">Distance From earth:  152 100 000 000 km</p>
+        <p id="radius">Radius:  6 371 km</p>
+        <p id="core">Core:  hydrogen and helium</p>
+        <a href="https://solarsystem.nasa.gov/planets/overview/" target=”_blank”><img src="./resources/nasa-6.svg" alt="nasa" id="nasaLink"></a>
+        <a href="https://en.wikipedia.org/wiki/Solar_System" target=”_blank”><img src="./resources/wikipedia.svg" alt="wikipedia" id="wikiLink"></a>
+        
+    </div>
+</body>
+</html>
