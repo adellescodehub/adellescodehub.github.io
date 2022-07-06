@@ -170,7 +170,7 @@ function init() {
 
     //camera
     camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 2000 );
-    camera.position.set( 14, 0, 0);
+    camera.position.set( 15, 0, 0);
     scene = new THREE.Scene();
     
     //planet
@@ -193,7 +193,7 @@ function init() {
     controls = new THREE.OrbitControls( camera, renderer.domElement );
     controls.minPolarAngle = Math.PI/2;
     controls.maxPolarAngle = Math.PI/2;
-    controls.enableZoom = false;
+    controls.enableZoom = true;
     controls.enablePan = false;
 }
 
